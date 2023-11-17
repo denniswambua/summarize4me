@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Summarize4Me",
+  "version": "1.0",
+  "description": "Summarizes popular blogging sites articles",
+  "icons": {
+    "16": "images/summeup-16.png",
+    "32": "images/summeup-32.png",
+    "48": "images/summeup-48.png",
+    "128": "images/summeup-128.png"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "scripts/content.js"
+      ],
+      "matches": [
+        "https://developer.chrome.com/docs/*"
+      ]
+    }
+  ]
+}
